@@ -281,8 +281,8 @@ router.post('/user/contact', async(request, response) => {
   //   if (!err) {
         console.log(request.body);
         sgMail.send(msg={
-           to: 'i.bellaouedj@esi-sba.dz',
-           from:contact.email,
+           to: 'iblyo116@gmail.com',
+           from:'i.bellaouedj@esi-sba.dz',
            subject:contact.subject,
            text:contact.message,
            html:contact.message,
@@ -338,7 +338,7 @@ router.get('/',(request,response)=>{
         if (error) {
             throw error;
         }
-        console.log('Register in render user :===> ',request.session.register);
+
         response.render('UserPages/user',{
           name: request.session.variabales.name,
           mail:request.session.variabales.mail,
@@ -349,7 +349,8 @@ router.get('/',(request,response)=>{
           image:request.session.variabales.image,
           register:request.session.register,
           comment:results})
-        request.session.register= false
+         request.session.register= false
+         console.log('Register after render user :===> ',request.session.register);
 
     });})
 // -------------------------------------------------------------------------------

@@ -1,336 +1,316 @@
 <%- include ("header2") %>
 
- <% if (register){%>
-   <a class="dropdown-item" href="/form" data-toggle="modal" data-target="#formModal">
-       <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-   </a>
-   <style>
-   .alert {
-     padding: 20px;
-     background-color:#bdbdbd;
-     color: white;
-   }
+            <% if (register) { %>
+              <a class="dropdown-item" href="/form" data-toggle="modal" data-target="#formModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+              </a>
+              <style>
+              .alert {
+                padding: 20px;
+                background-color:#bdbdbd;
+                color: white;
+              }
 
-   .closebtn {
-     margin-left: 15px;
-     color: white;
-     font-weight: bold;
-     float: right;
-     font-size: 22px;
-     line-height: 20px;
-     cursor: pointer;
-     transition: 0.3s;
-   }
+              .closebtn {
+                margin-left: 15px;
+                color: white;
+                font-weight: bold;
+                float: right;
+                font-size: 22px;
+                line-height: 20px;
+                cursor: pointer;
+                transition: 0.3s;
+              }
 
-   .closebtn:hover {
-     color: black;
-   }
-   </style>
-   </head>
-   <body>
-   <p></p>
-   <br><br><br>
-   <div class="alert">
-     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-     <strong> Rq </strong> Complete your registration.
-     <div class="modal-footer">
-         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-         <a class="btn btn-primary" href="http://localhost:8080/form">Form</a>
-     </div>
-   </div>
+              .closebtn:hover {
+                color: black;
+              }
+              </style>
+              </head>
+              <body>
+              <p></p>
+              <br><br><br>
+              <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <strong> Rq </strong> Complete your registration.
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="http://localhost:8080/form">Form</a>
+                </div>
+              </div>
 
-   <!-- Form modal -->
-   <!-- <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-       aria-hidden="true">
-       <div class="modal-dialog" role="document">
-           <div class="modal-content">
-               <div class="modal-header">
-                   <h5 class="modal-title" id="exampleModalLabel">Ready to Give Us More infos?</h5>
-                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                       <span aria-hidden="true">×</span>
-                   </button>
-               </div>
-               <div class="modal-body">Select "Form" below if you are ready to end your regestration.</div>
-               <div class="modal-footer">
-                   <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                   <a class="btn btn-primary" href="http://localhost:8080/form">Form</a>
-               </div>
-           </div>
-       </div>
-   </div> -->
-   <!-- end form modal -->
-<%}%>
+           <%}%>
+
             <section class="section-1" id="section-1">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <div class="pray">
-                                <img src="/img/hadj30.jpg" alt="Pray" class="" />
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="panel text-left">
-                                <h1 style="font-family: 'Almarai', sans-serif;"> قبل الرحلة </h1>
-                                <p class="pt-4" style="font-family: 'Almarai', sans-serif; font-size: larger;">
-                                    في الأيام الأولى من شهر ذي الحجة من كل عام تهفو قلوب المسلمين وتتجه أنظارهم نحو بيت
-                                    الله الحرام،
-                                    يحدوها
-                                    الشوق ويدفعها
-                                    الأمل فيما عند الله سبحانه وتعالى، مستجيبين لدعوة أبيهم إبراهيم عليه السلام عندما
-                                    أمره الله
-                                    بقوله: "وأذن
-                                    في الناس بالحَج
-                                    يأتوك رجالا وعلى كل ضَامر يأتين من كل فج عميق" (سورة الحج). ولذلك نعرض هنا لأهم ما
-                                    ينبغي للحاج
-                                    الإلمام
-                                    به
-                                    من أحكام هذه
-                                    الشعيرة العظيمة.
-                                </p>
-                                <a href="http://localhost:8080/user/avant_voyage" class="btnstyle"
-                                    style="font-family: 'Almarai', sans-serif; font-size: large;">ماذا يدجب أن
-                                    تعرف</a>
-                            </div>
+                          <div class="container text-center">
+                              <div class="row">
+                                  <div class="col-md-6 col-12">
+                                      <div class="pray">
+                                          <img src="/img/hadj30.jpg" alt="Pray" class="" />
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6 col-12">
+                                      <div class="panel text-left">
+                                          <h1 style="font-family: 'Almarai', sans-serif;"> قبل الرحلة </h1>
+                                          <p class="pt-4" style="font-family: 'Almarai', sans-serif; font-size: larger;">
+                                              في الأيام الأولى من شهر ذي الحجة من كل عام تهفو قلوب المسلمين وتتجه أنظارهم نحو بيت
+                                              الله الحرام،
+                                              يحدوها
+                                              الشوق ويدفعها
+                                              الأمل فيما عند الله سبحانه وتعالى، مستجيبين لدعوة أبيهم إبراهيم عليه السلام عندما
+                                              أمره الله
+                                              بقوله: "وأذن
+                                              في الناس بالحَج
+                                              يأتوك رجالا وعلى كل ضَامر يأتين من كل فج عميق" (سورة الحج). ولذلك نعرض هنا لأهم ما
+                                              ينبغي للحاج
+                                              الإلمام
+                                              به
+                                              من أحكام هذه
+                                              الشعيرة العظيمة.
+                                          </p>
+                                          <a href="http://localhost:8080/user/avant_voyage" class="btnstyle"
+                                              style="font-family: 'Almarai', sans-serif; font-size: large;">ماذا يدجب أن
+                                              تعرف</a>
+                                      </div>
 
-                        </div>
-                    </div>
-                </div>
-            </section>
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
 
-            <section class="section-2 container-fluid p-0">
-                <div class="cover">
-                    <div class="container-fluid text-center">
-                        <div class=" d-flex flex-md-row flex-wrap justify-content-center">
-                            <!-----card2----->
-                            <div class="containermanasik" style="font-family: 'Almarai', sans-serif;">
-                                <div class="card">
-                                    <img src="/img/manasik5.jpg">
-                                    <h3>مناسك الحج</h3>
-                                    <p>مَناسك الحج هي الأعمال التي يقوم بها المسلم قبل وأثناء ونهاية الحج وهي التي أراها
-                                        الله عز وجل
-                                        لنبيه
-                                        وخليله إبراهيم.
-                                    </p>
-                                    <div class="data-container">
-                                        <span class="btn2"><a href="http://localhost:8080/user/manasik-hadj">Read
-                                                More</a></span>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="/img/manasik2.jpg">
-                                    <h3>مناسك العمرة</h3>
-                                    <p> العمرة هي زيارة المسجد الحرام في مكة
-                                        لأداء مناسك خاصة، كالطواف، السعي والحلق. والعمرة مشروعة بأصل الإسلام،</p>
-                                    <div class="data-container">
-                                        <span class="btn2"><a href="http://localhost:8080/user/manasik_omra">Read
-                                                More</a></span>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="/img/doaa9.jpg">
-                                    <h3>أدعية</h3>
-                                    <p>الدعاء في الإسلام هي عبادة تقوم على سؤال العبد ربَّه والطلب منه وهي عبادة من أفضل
-                                        العبادات
-                                        التي يحبها
-                                        الله خالصةً له
-                                    </p>
-                                    <div class="data-container">
-                                        <span class="btn2"><a href="http://localhost:8080/user/ad3iya">Read More</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-----end of card2------>
-                    </div>
-                </div>
-
-
-
-                <!----loisir------>
-                <section class="loisirsection">
-                    <div id="wrap">
-                        <p>l</p>
-                        <p>o</p>
-                        <p>a</p>
-                        <p>s</p>
-                        <p>i</p>
-                        <p>r</p>
-                        <p>e</p>
-                    </div>
-                    <section class="portfolio_section layout_padding">
-                        <div class="containerport">
-                            <div class="box">
-                                <div class="imgBx">
-                                    <img src="/img/resto1.jpg" />
-                                </div>
-                                <div class="content">
-                                    <h2>Restaurant</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                    <a href="http://localhost:8080/user/loisir">Read More</a>
-                                </div>
-                            </div>
-                            <div class="box box2">
-                                <div class="imgBx">
-                                    <img src="/img/plcae2.jpg" />
-                                </div>
-                                <div class="content">
-                                    <h2>Places</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                    <a href="http://localhost:8080/user/loisir">Read More</a>
-                                </div>
-                            </div>
-                            <div class="box box3">
-                                <div class="imgBx">
-                                    <img src="/img/hotel4.jpg" />
-                                </div>
-                                <div class="content">
-                                    <h2>Hotels</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                    <a href="http://localhost:8080/user/loisir2">Read More</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
-                </section>
-                <!------end of loisir-------->
+                      <section class="section-2 container-fluid p-0">
+                          <div class="cover">
+                              <div class="container-fluid text-center">
+                                  <div class=" d-flex flex-md-row flex-wrap justify-content-center">
+                                      <!-----card2----->
+                                      <div class="containermanasik" style="font-family: 'Almarai', sans-serif;">
+                                          <div class="card">
+                                              <img src="/img/manasik5.jpg">
+                                              <h3>مناسك الحج</h3>
+                                              <p>مَناسك الحج هي الأعمال التي يقوم بها المسلم قبل وأثناء ونهاية الحج وهي التي أراها
+                                                  الله عز وجل
+                                                  لنبيه
+                                                  وخليله إبراهيم.
+                                              </p>
+                                              <div class="data-container">
+                                                  <span class="btn2"><a href="http://localhost:8080/user/manasik-hadj">Read
+                                                          More</a></span>
+                                              </div>
+                                          </div>
+                                          <div class="card">
+                                              <img src="/img/manasik2.jpg">
+                                              <h3>مناسك العمرة</h3>
+                                              <p> العمرة هي زيارة المسجد الحرام في مكة
+                                                  لأداء مناسك خاصة، كالطواف، السعي والحلق. والعمرة مشروعة بأصل الإسلام،</p>
+                                              <div class="data-container">
+                                                  <span class="btn2"><a href="http://localhost:8080/user/manasik_omra">Read
+                                                          More</a></span>
+                                              </div>
+                                          </div>
+                                          <div class="card">
+                                              <img src="/img/doaa9.jpg">
+                                              <h3>أدعية</h3>
+                                              <p>الدعاء في الإسلام هي عبادة تقوم على سؤال العبد ربَّه والطلب منه وهي عبادة من أفضل
+                                                  العبادات
+                                                  التي يحبها
+                                                  الله خالصةً له
+                                              </p>
+                                              <div class="data-container">
+                                                  <span class="btn2"><a href="http://localhost:8080/user/ad3iya">Read More</a></span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-----end of card2------>
+                              </div>
+                          </div>
 
 
 
+                          <!----loisir------>
+                          <section class="loisirsection">
+                              <div id="wrap">
+                                  <p>l</p>
+                                  <p>o</p>
+                                  <p>a</p>
+                                  <p>s</p>
+                                  <p>i</p>
+                                  <p>r</p>
+                                  <p>e</p>
+                              </div>
+                              <section class="portfolio_section layout_padding">
+                                  <div class="containerport">
+                                      <div class="box">
+                                          <div class="imgBx">
+                                              <img src="/img/resto1.jpg" />
+                                          </div>
+                                          <div class="content">
+                                              <h2>Restaurant</h2>
+                                              <p>
+                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                              </p>
+                                              <a href="http://localhost:8080/user/loisir">Read More</a>
+                                          </div>
+                                      </div>
+                                      <div class="box box2">
+                                          <div class="imgBx">
+                                              <img src="/img/plcae2.jpg" />
+                                          </div>
+                                          <div class="content">
+                                              <h2>Places</h2>
+                                              <p>
+                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                              </p>
+                                              <a href="http://localhost:8080/user/loisir">Read More</a>
+                                          </div>
+                                      </div>
+                                      <div class="box box3">
+                                          <div class="imgBx">
+                                              <img src="/img/hotel4.jpg" />
+                                          </div>
+                                          <div class="content">
+                                              <h2>Hotels</h2>
+                                              <p>
+                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                              </p>
+                                              <a href="http://localhost:8080/user/loisir2">Read More</a>
+                                          </div>
+                                      </div>
 
-        </div>
-    </div>
-
-    <!------météo api------->
-    <section class="meteo">
-        <span id="date_heure" alt=""></span>
-        <script type="text/javascript">window.onload = date_heure('date_heure');</script>
+                                  </div>
+                              </section>
+                          </section>
+                          <!------end of loisir-------->
 
 
 
-        <br><br>
-        <section class="meteo2">
-            <div class="containermet">
-                <div class="app-title">
-                    <h1>Weather</h1>
-                </div>
-                <div class="notification"> </div>
-                <div class="weather-container">
-                    <div class="weather-icon">
-                        <img src="/img/icons/unknown.png" alt="">
-                    </div>
-                    <div class="temperature-value">
-                        <p>- °<span>C</span></p>
-                    </div>
-                    <div class="temperature-description">
-                        <p> - </p>
-                    </div>
-                    <div class="location">
-                        <p>-</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--------weather warda------>
 
-        <!-----------
-                  <section id="app"></section>
-                  <br>
+                  </div>
+              </div>
 
-                  <i class="wi" id="cc"></i>
-                  <h2> <i class="wi wi-thermometer"></i>
-                    <span id="temperature"></span> C°
-                    <br> <span id="conditions">
+              <!------météo api------->
+              <section class="meteo">
+                  <span id="date_heure" alt=""></span>
+                  <script type="text/javascript">window.onload = date_heure('date_heure');</script>
 
-                      <div class="container">
-                        <div class="text"></div>
+                  <br><br>
+                  <section class="meteo2">
+                      <div class="containermet">
+                          <div class="app-title">
+                              <h1>Weather</h1>
+                          </div>
+                          <div class="notification"> </div>
+                          <div class="weather-container">
+                              <div class="weather-icon">
+                                  <img src="/img/icons/unknown.png" alt="">
+                              </div>
+                              <div class="temperature-value">
+                                  <p>- °<span>C</span></p>
+                              </div>
+                              <div class="temperature-description">
+                                  <p> - </p>
+                              </div>
+                              <div class="location">
+                                  <p>-</p>
+                              </div>
+                          </div>
                       </div>
+                  </section>
+                  <!--------weather warda------>
 
-                    </span>
+                  <!-----------
+                            <section id="app"></section>
+                            <br>
+
+                            <i class="wi" id="cc"></i>
+                            <h2> <i class="wi wi-thermometer"></i>
+                              <span id="temperature"></span> C°
+                              <br> <span id="conditions">
+
+                                <div class="container">
+                                  <div class="text"></div>
+                                </div>
+
+                              </span>
 
 
-                  </h2>
+                            </h2>
 
 
-                  <h1> <span id="ville"></span> </h1>
-                  <br><br> --->
-        <!---------end weather warda---->
-        <div class="col-3 input-effect"><br>
-            <input class="effect-1" id="queryLoc" type="text" placeholder="Saisir la ville,pays">
-            <br> <br>
-            <button class="mybtn" onclick="buttonClickGET()">Voir Météo</button>
-        </div>
-        <br><br><br><br>
-        </div>
-        <p id="zone_meteo"></p>
-        <br>
-    </section>
-    <!--------end of météo api----->
-    </section>
-    <section class="sectiondiv">
-        <!-------currency convert--------->
-        <div class="currency-container">
+                            <h1> <span id="ville"></span> </h1>
+                            <br><br> --->
+                  <!---------end weather warda---->
+                  <div class="col-3 input-effect"><br>
+                      <input class="effect-1" id="queryLoc" type="text" placeholder="Saisir la ville,pays">
+                      <br> <br>
+                      <button class="mybtn" onclick="buttonClickGET()">Voir Météo</button>
+                  </div>
+                  <br><br><br><br>
+                  </div>
+                  <p id="zone_meteo"></p>
+                  <br>
+              </section>
+              <!--------end of météo api----->
+              </section>
+              <section class="sectiondiv">
+                  <!-------currency convert--------->
+                  <div class="currency-container">
 
-            <div class="containercur">
-                <div class="header">
-                    <h1>Currency Converter</h1>
+                      <div class="containercur">
+                          <div class="header">
+                              <h1>Currency Converter</h1>
+                          </div>
+                          <div class="date"></div>
+                          <ul class="currencies"></ul>
+                          <button class="add-currency-btn"><i class="fas fa-long-arrow-alt-left"></i>Add
+                              Currency</button>
+                          <ul class="add-currency-list"></ul>
+                      </div>
+                  </div>
+                  <!------currency convert------>
+              </section>
+
+              <!------------------------Last Question----------------------->
+              <section>
+                <div class="card border-primary mb-3" style="max-width:800px;
+                margin: auto;">
+                  <div class="card-header">
+                   Question
+                  </div>
+                  <div class="card-body">
+                    <% for (comment of comment) {%>
+                    <h5 class="card-title"><%= comment.content %></h5>
+                    <% }%>
+                    <a href="http://localhost:8080/question" class="btn btn-primary">See other questions</a>
+                  </div>
                 </div>
-                <div class="date"></div>
-                <ul class="currencies"></ul>
-                <button class="add-currency-btn"><i class="fas fa-long-arrow-alt-left"></i>Add
-                    Currency</button>
-                <ul class="add-currency-list"></ul>
-            </div>
-        </div>
-        <!------currency convert------>
-    </section>
+              </section>
+              <!---------------------------------------------------->
 
-    <!------------------------Last Question----------------------->
-    <section>
-      <div class="card border-primary mb-3" style="max-width:800px;
-      margin: auto;">
-        <div class="card-header">
-         Question
-        </div>
-        <div class="card-body">
-          <% for (comment of comment) {%>
-          <h5 class="card-title"><%= comment.content %></h5>
-          <% }%>
-          <a href="http://localhost:8080/question" class="btn btn-primary">See other questions</a>
-        </div>
-      </div>
-    </section>
-    <!---------------------------------------------------->
+              <div class="mapdiv">
+                  <h2>Pour utiliser notre map</h2>
+              </div>
 
-    <div class="mapdiv">
-        <h2>Pour utiliser notre map</h2>
-    </div>
+              <!-------------------------( GPS )--------------------------------------------------->
+              <section class="section-4 container-fluid p-0 text-center">
 
-    <!-------------------------( GPS )--------------------------------------------------->
-    <section class="section-4 container-fluid p-0 text-center">
+                  <div class="row">
+                      <div class="col-md-12 col-sm-12">
+                          <div class="directionsContainer">
+                              <div id="directionsPanel"></div>
+                              <div id="directionsItinerary"></div>
+                          </div>
+                          <div id="myMap"></div>
+                          <input type="button" value="Start Continuous Tracking" onclick="StartTracking()" />
+                          <input type="button" value="Stop Continuous Tracking" onclick="StopTracking()" />
+                      </div>
+                  </div>
+              </section>
+              <!-------------------------------------------------------------------------------->
 
-        <div class="row">
-            <div class="col-md-12 col-sm-12">
-                <div class="directionsContainer">
-                    <div id="directionsPanel"></div>
-                    <div id="directionsItinerary"></div>
-                </div>
-                <div id="myMap"></div>
-                <input type="button" value="Start Continuous Tracking" onclick="StartTracking()" />
-                <input type="button" value="Stop Continuous Tracking" onclick="StopTracking()" />
-            </div>
-        </div>
-    </section>
-    <!-------------------------------------------------------------------------------->
 
 
 
@@ -478,27 +458,6 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-<!-- Form modal -->
-<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ready to Give Us More infos?</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body">Select "Form" below if you are ready to end your regestration.</div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="http://localhost:8080/form">Form</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end form modal -->
-
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -519,14 +478,6 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-      </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-      </script>
-
     <script src="/js/main.js"></script>
     <script src="/js/currency.js"></script>
     <script src="/js/date-heure.js"></script>
@@ -539,6 +490,8 @@
     <!-- Bootstrap core JavaScript-->
     <script src="/vendor/jquery/jquery.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
     <!-- Core plugin JavaScript-->
     <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for all pages-->

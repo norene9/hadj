@@ -98,6 +98,7 @@ jQuery(document).ready(function ($) {
         var action = $(this).attr('action');
 
         if (!action) {
+alert('message sent')
             this_form.find('.loading').slideUp();
             this_form.find('.error-message').slideDown().html('The form action property is not set!');
             return false;
@@ -113,6 +114,7 @@ jQuery(document).ready(function ($) {
             data: str,
             success: function (msg) {
                 if (msg == 'OK') {
+
                     this_form.find('.loading').slideUp();
                     this_form.find('.sent-message').slideDown();
                     this_form.find("input:not(input[type=submit]), textarea").val('');
