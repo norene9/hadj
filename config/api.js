@@ -3,7 +3,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const session = require('express-session')
 const bcrypt = require('bcrypt')
-const sgMail = require('@sendgrid/mail');
+//const sgMail = require('@sendgrid/mail');
 let mysqlConnection= require('./config')
 //-----------------------------------------------------------------------
 
@@ -183,7 +183,7 @@ router.post('/forgotPSW', async(request, response) => {
     if (!err) {
 
         console.log(rows[0].tokenKey);
-        sgMail.send(msg={
+        /*sgMail.send(msg={
            to: mail.forgot,
            from: 'i.bellaouedj@esi-sba.dz',
            subject: 'Sending with Twilio SendGrid is Fun',
@@ -194,7 +194,7 @@ router.post('/forgotPSW', async(request, response) => {
          }).catch((error) => {
             console.log(error.response.body)
            // console.log(error.response.body.errors[0].message)
-        })
+        })*/
         response.render('Home page/forgot-pass',{msg:"Check Your Email "})
         response.end()
   }
