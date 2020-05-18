@@ -90,29 +90,3 @@ mysqlConnection.query('INSERT INTO reply SET cont=?, qid=?,userNameRes=?', [cont
 })
 
 
- //AFICHER ANSWERS
-router.get('/answer/:id',(request,response)=>{
-
-         let id=request.params.id;
-      var sql = 'SELECT * FROM (SELECT * FROM message right join reply ON message.id=reply.qid UNION SELECT * FROM message left join reply ON message.id=reply.qid) as a where a.id=?';
-
-              mysqlConnection.query(sql, [id], function(error, results, fields) {
-  if (error) {
-      throw error;}
-
-      console.log(results[0]);
-  console.log(results[1]);
-  var i=results.length;
-
-  var v=[];
-  for(var i=0;i<results.length;i++){v[i]=results[i]}
-  if(results.length!==0)
-   response.render('answer/answer',{question:results[0],answer:v})
-
-
-                                                           })
-
-
-                              })
-
-module.exports = router;
